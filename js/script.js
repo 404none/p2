@@ -13,7 +13,6 @@
 			});
 		});
 
-
 /* Hamburger menu */
 
 		$(function() { 
