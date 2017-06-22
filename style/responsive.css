@@ -65,7 +65,7 @@
 	}
 	.scroll {
 		position: absolute;
-		top: 580px;
+		bottom: 30px;
 	}
 	.about-us {
 		padding: 70px 0;
