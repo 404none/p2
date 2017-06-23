@@ -13,12 +13,12 @@ a:hover {
 
 .header {
 	height: 1000px;
-	background-image: url('../images/header-bg.png');
+	background: url('../images/header-bg.png');
 	background-repeat: no-repeat;
 	padding: 100px 0;
 	background-position: top center;
+	background-size: cover;
 	position: relative;
-
 }
 .navbar-default  {
 	border: none;
@@ -68,6 +68,8 @@ h1 {
 .affix {
   	background-color: #FFF;
 	padding: 20px 0 10px 0;
+box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
 }
 
 .header-info {
@@ -195,14 +197,14 @@ h1 {
 	background-color: #ffe92f;
 	padding: 70px 0;
 }
-.gallery .heading h2{
+.gallery h2{
 	font-size: 9rem;
 	font-weight: 700;
 }
-.gallery .heading p{
+.gallery p{
 	font-size: 1.7rem;
 	font-weight: 300;
-	margin: 30px 0 40px 0;
+	padding: 20px 300px 40px;
 }
 .gallery img {
 	margin-bottom: 30px;
@@ -290,7 +292,7 @@ h1 {
 .blog p {
 	font-size: 1.7rem;
 	font-weight: 300;
-	margin: 30px 0 0 0;
+	padding: 20px 300px 0;
 }
 .blog button {
 	background-color: #f72b3b;
@@ -309,6 +311,11 @@ h1 {
 .blog .blog-content {
 	margin-top: 50px;
 	margin-bottom: 50px;
+}
+.blog article {
+	max-width: 370px;
+	max-height: 310px;
+	margin: 0 auto;
 }
 .blog article img {
 	transition: all .2s linear;
@@ -346,12 +353,13 @@ h1 {
 	font-weight: 300;
 	text-align: left;
 	margin-top: 10px;
+	padding: 0;
 }
 .blog article .header-blog {
 	position: absolute; 
 	left: 0;
 	bottom: 0;
-	padding: 50px 0 25px 20px;
+	padding: 50px 10px 25px 20px;
 	box-shadow: inset 0px -150px 70px -40px rgba(0,0,0,0.75);
 }
 .blog a:hover img {
@@ -367,14 +375,15 @@ h1 {
 	background-position: 100% 100%;
 	padding: 100px 0;
 }
-.contact .heading h2 {
+.contact h2 {
 	font-size: 9rem;
 	font-weight: 700;
 }
-.contact .heading p {
+.contact p {
 	font-size: 1.7rem;
 	font-weight: 300;
-	margin: 50px 0;
+	margin: 30px 0;
+	padding: 0 300px 0;
 }
 .contact form {
 	padding-right: 70px;
@@ -416,6 +425,7 @@ h1 {
 	font-size: 2rem;
 	font-weight: 300;
 	padding-left: 70px;
+	text-align: left;
 }
 .contact address span {
 	font-size: 1.7rem;
