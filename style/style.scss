@@ -1,5 +1,7 @@
+@import 'settings.scss';
+
 body {
-	color: #262626;
+	color: $default-color;
 	font-family: 'Raleway', sans-serif;
 	font-size: 62.5%;
 	margin:0;
@@ -8,9 +10,13 @@ body {
 a,
 a:hover {
 	text-decoration: none;
-	color: #000;
+	color: $default-color;
 }
-
+h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 5rem;
+	color: $default-color;
+}
 .header {
 	height: 1000px;
 	background: url('../images/header-bg.png');
@@ -26,11 +32,6 @@ a:hover {
 	padding-top: 40px; 
 }
 
-h1 {
-	font-family: 'Pacifico', cursive;
-	font-size: 5rem;
-	color: #262626;
-}
 .logo {
 	margin-top: -40px;
 	float: left;
@@ -41,7 +42,7 @@ h1 {
 	margin: 10px 15px;
 }
 .navbar-default .navbar-right li a {
-	color: #262626;
+	color: $default-color;
 	font-size: 1.6rem;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -51,14 +52,14 @@ h1 {
 .navbar-default .navbar-right li.active a,
 .navbar-default .navbar-right li a:hover
 {
-	color: #262626;
+	color: $default-color;
 	background-color: transparent;
 	border-top: 3px solid #ff6033;
 }
 .navbar-default .navbar-right li.active:hover a,
 .navbar-default .navbar-right li.active a:hover,
 .navbar-default .navbar-right li.active a:focus {
-	color: #262626;
+	color: $default-color;
 	background-color: transparent;
 }
 .navbar-fixed-top {
@@ -66,7 +67,7 @@ h1 {
 }
 .navbar-fixed-top.scrolled,
 .affix {
-  	background-color: #FFF;
+  	background-color: $white-color;
 	padding: 20px 0 10px 0;
 box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 
@@ -87,20 +88,13 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 	margin: 20px 0 35px 0;
 }
 .header-info button {
-	font-weight: 300;
-	font-size: 2rem;
-	color: #FFF;
-	background-color: #ff6033;
-	text-transform: uppercase;
-	border-radius: 0;
-	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	@include button(#ff6033, 200px);
+	color: $white-color;
 	width: 200px;
-	height: 55px;
-	border: none;
 }
 .header-info button:hover {
 	background-color: #d2390d;
-	color: #FFF;
+	color: $white-color;
 }
 .scroll {
 	position: absolute;
@@ -111,7 +105,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 
 
 .about-us {
-	color: #FFF;	
+	color: $white-color;	
 	padding: 70px 0;
 	background-color: #00c4c4;
 	background: radial-gradient(ellipse at center, rgba(0,172,172,1) 0%,rgba(0,175,175,1) 21%,rgba(0,175,175,1) 79%,rgba(0,172,172,1) 100%);
@@ -174,7 +168,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .services p {
 	font-size: 1.6rem;
-	color: #FFF;
+	color: $white-color;
 	width: 100%;
 	padding-bottom: 15px;
 }
@@ -189,7 +183,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 	width: 95%;
 	font-weight: 700;
 	font-size: 9rem;
-	color: #FFF;
+	color: $white-color;
 }
 
 
@@ -211,16 +205,8 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .gallery button {
-	background-color: #5585a2;
-	font-size: 2rem;
-	font-weight: 300;
-	text-transform: uppercase;
-	border-radius: 0;
-	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-	width: 200px;
-	height: 55px;
+	@include button(#5585a2, 200px);
 	margin: 20px 0 50px 0;
-	border: 0;
 }
 .gallery button:hover,
 .gallery button:focus,
@@ -262,7 +248,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 	width: 1px; 
 }
 .subscribe-us .form-inline input {
-	border: 1px solid #262626;
+	border: 1px solid $default-color;
 	border-radius: 0;
 	color: #a1a1a1;
 	padding: 27.5px 15px;
@@ -270,15 +256,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 	margin-right: 15px;
 }
 .subscribe-us button {
-	background-color: #96b92c;
-	border-radius: 0;
-	width: 170px;
-	height: 55px;
-	text-transform: uppercase;
-	font-size: 2rem;
-	font-weight: 300;
-	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-	border: 0;
+	@include button(#96b92c);
 }
 .subscribe-us button:hover {
 	background-color: #7b9923;
@@ -289,7 +267,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 	background-color: #b07cf7;
 	padding: 100px 0 120px 0;
 	text-align: center;
-	color: #FFF;
+	color: $white-color;
 }
 .blog h2 {
 	font-size: 8rem;
@@ -301,15 +279,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 	padding: 20px 300px 0;
 }
 .blog button {
-	background-color: #f72b3b;
-	border-radius: 0;
-	width: 170px;
-	height: 55px;
-	text-transform: uppercase;
-	font-size: 2rem;
-	font-weight: 300;
-	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-	border: 0;
+	@include button(#f72b3b);
 }
 .blog button:hover,
 .blog button:focus,
@@ -331,7 +301,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .blog article a {
-	color: #FFF;
+	color: $white-color;
 	display: block;
 	position: relative;
 	overflow: hidden;
@@ -403,7 +373,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 	border: 0;
 	border-radius: 0;
 	padding: 20px;
-	color: #FFF;
+	color: $white-color;
 }
 .contact textarea {
 	resize: none;
@@ -411,19 +381,11 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .contact ::placeholder {
 	font-size: 1.5rem;
-	color: #FFF;
+	color: $white-color;
 	font-weight: 300;
 }
 .contact button {
-	background-color: #00c4c4;
-	border: 0;
-	border-radius: 0;
-	width: 170px;
-	height: 55px;
-	text-transform: uppercase;
-	font-size: 1.7rem;
-	font-weight: 300;
-	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	@include button(#00c4c4, 1.7rem, 170px, 55px);
 	padding: 10px;
 	margin-top: 20px;
 }
@@ -444,7 +406,7 @@ box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 
 
 footer {
-	background-color: #262626;
+	background-color: $default-color;
 	padding: 30px 0;
 }
 footer .copyright {

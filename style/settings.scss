@@ -1,0 +1,16 @@
+//kolory
+
+$default-color: #262626;
+$white-color #FFF;
+
+@mixin button($background-color, $font-size: 2rem, $width: 170px, $height: 55px) {
+	background-color: $background-color;
+	width: $width;
+	height: $height;
+	font-weight: 300;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	border: 0;
+	text-transform: uppercase;
+	border-radius: 0;
+	font-size: $font-size;
+}

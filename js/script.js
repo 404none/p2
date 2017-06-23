@@ -47,9 +47,30 @@
 
 
     $(document).ready(function() {
-    
-    $("[data-fancybox]").fancybox({
-        
+    $().fancybox({
 
-       });
+    });
 });
+
+// var viewMoreGallery = document.querySelector('.viewMoreGallery');
+
+// viewMoreGallery.addEventListener('click', function(){
+//     var hidden = document.querySelector('.hidden-content-gallery');
+//     hidden.hide('hidden');
+
+// }, false);
+
+$(document).ready(function(){
+    $('.viewMoreGallery').click(function(event){
+        $('.hidden-content-gallery').slideToggle();
+        $(".viewMoreGallery").html($(this).text() == 'show less' ? 'view more' : 'show less');
+    });
+});
+$(document).ready(function(){
+    $('.viewMoreBlog').click(function(event){
+        $('.hidden-content-blog').slideToggle();
+         $(".viewMoreBlog").html($(this).text() == 'show less' ? 'view more' : 'show less');
+    });
+
+});
+

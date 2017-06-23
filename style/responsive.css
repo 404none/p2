@@ -115,7 +115,7 @@
 		padding-right: 0;
 	}
 	.contact p {
-		padding: 0 200px;
+		padding: 0 100px;
 }
 
 @media only screen and (max-width: 768px) { 
@@ -212,6 +212,9 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.gallery p {
+		padding: 0 20px;
+	}
 	.subscribe-us .form-inline input {
 		width: 100%;
 	}
@@ -222,7 +225,9 @@
 		font-size: 2rem;
 		line-height: 25px;
 	}
-
+	.blog p {
+		padding: 0 20px;
+	}
 	.blog article span {
 		font-size: 2.4rem;
 		line-height: 26px;
@@ -246,7 +251,7 @@
 	.contact p {
 		font-size: 1.6rem;
 		margin: 20px 0 30px 0;
-		padding: 0 100px;
+		padding: 0 20px;
 	}
 	.contact form {	
 		padding-right: 0;
